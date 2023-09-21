@@ -1,5 +1,5 @@
 export type paramsType = {
     params: {
-        slug: string;
+        id: string;
     }
 };
