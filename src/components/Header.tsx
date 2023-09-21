@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
     return ( 
         <nav className="bg-white border-gray-200">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div className="flex flex-wrap items-center justify-between mx-auto p-4 max-w-screen-xl">
             <a href="https://flowbite.com/" className="flex items-center">
               <Image
                 src="/logo.png"
@@ -26,19 +27,19 @@ const Header = () => {
             </div>
             <ul className="md:max-w-xl md:justify-between flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:items-center md:space-x-8 md:mt-0 md:border-0 md:bg-white">
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
+                <Link href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</Link>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+                <Link href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</Link>
               </li>
               <li>
                 <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Furniture</a>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  ">Building</a>
+                <Link href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  ">Building</Link>
               </li>
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 0 ">About</a>
+                <Link href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 0 ">About</Link>
               </li>
             </ul>
           </div>

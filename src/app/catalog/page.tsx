@@ -1,16 +1,15 @@
 import Catalog from "@/modules/catalog/Catalog";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
     title: "Bcate Catalog",
     description: "Catalog of BCate"
 }
 
-const CatalogPage = () => {
+export default function CatalogPage() {
     return ( 
-        <Catalog />
+        <div className="max-w-screen-xl mx-auto">
+            <Catalog />
+        </div>
      );
 }
- 
-export default CatalogPage;

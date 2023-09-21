@@ -1,15 +1,9 @@
-export const generateStaticParams = async () => {
-    return [1,2,3,4,5].map(num => {
-        return {
-            slug: num.toString()
-        }
-    })
-};
+import CatalogDetails from "@/modules/catalog/CatalogDetails";
+import { paramsType } from "@/types/global";
 
-const CatalogDetailsPage = () => {
+export default function CatalogDetailsPage({ params }: paramsType) {
+    const { slug } = params;
     return ( 
-        <h1></h1>
+        <CatalogDetails slug={slug}  />
      );
 }
- 
-export default CatalogDetailsPage;
