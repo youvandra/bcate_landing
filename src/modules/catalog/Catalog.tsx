@@ -1,7 +1,18 @@
+import Card from "@/components/Card";
+
 const Catalog = () => {
-    return ( 
-        <h1>This is Catalog</h1>
-     );
+    return (
+        <div className="max-w-screen-xl p-8">
+            <div className="md:grid md:grid-cols-5 gap-4">
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+                <Card imageUrl="/kursi.png" name="Kursi Mahal" price={1250000} />
+            </div>
+        </div>
+    );
 }
- 
+
 export default Catalog;
