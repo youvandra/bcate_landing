@@ -4,7 +4,7 @@ export type paramsType = {
     }
 };
 
-export type cardType = {
+export type CardType = {
     imageUrl: string;
     name: string;
     price: number;
