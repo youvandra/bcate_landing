@@ -5,6 +5,7 @@ export type paramsType = {
 };
 
 export type CardType = {
+    id: string,
     imageUrl: string;
     name: string;
     price: number;

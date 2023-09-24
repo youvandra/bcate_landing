@@ -1,4 +1,6 @@
 import Card from "@/components/Card";
+import { randomId } from "@/utils/generator";
+import { randomUUID } from "crypto";
 import Image from "next/image";
 
 export default function Home() {
@@ -79,19 +81,14 @@ export default function Home() {
                 <p className="text-3xl font-semibold mb-2" >Lets explore</p>
                 <p className="mb-12" >We provide all kinds of furniture design and building architecture</p>
                 <div className="grid grid-cols-5 gap-4">
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
-                    <Card imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
+                    {
+                        randomId(10).map(e => (
+                            <Card id={e} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
+                        ))
+                    }
                 </div>
                 <div className="flex flex-row justify-center mt-8" >
-                <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-3">Browse More</button>
+                    <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-3">Browse More</button>
                 </div>
             </div>
             <div className="my-12" >
