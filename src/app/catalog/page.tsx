@@ -1,5 +1,5 @@
 import Card from "@/components/Card";
-import Catalog from "@/modules/catalog/Catalog";
+import CatalogSidebar from "@/modules/catalog/sidebar/CatalogSidebar";
 import { randomId } from "@/utils/generator";
 import { Metadata } from "next";
 
@@ -46,16 +46,14 @@ export default function CatalogPage() {
             </div>
 
             <div className="col-span-1" >
-                <div className="p-8 bg-blue-500" >
-
-                </div>
+                <CatalogSidebar />
             </div>
 
             <div className="col-span-4" >
                 <div className="grid grid-cols-4 gap-8" >
                     {
-                        randomId(10).map(e => (
-                            <Card id={e} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
+                        randomId(10).map(num => (
+                            <Card key={num} id={num} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
                         ))
                     }
                 </div>
