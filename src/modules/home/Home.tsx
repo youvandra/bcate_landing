@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className='max-w-sm md:max-w-screen-xl mx-auto'>
+        <div className='max-w-sm md:max-w-screen-xl mx-auto p-4 md:p-0'>
             <div className={`w-full py-8 h-auto grid grid-cols-12 gap-8`} >
                 <div className='col-span-12 md:col-span-6 mt-0 md:mt-10 flex flex-col space-y-6 ' >
                     <h1 className='text-4xl md:text-6xl font-semibold'>BCate Project</h1>
