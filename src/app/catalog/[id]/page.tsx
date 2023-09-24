@@ -1,15 +1,15 @@
-import CatalogDetails from "@/modules/catalog/CatalogDetails";
-import { paramsType } from "@/types/global";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-    title: "Detail Catalog",
-    description: "Detail of catalog"
-};
+import { usePathname } from 'next/navigation'
 
-export default function CatalogDetailsPage({ params }: paramsType) {
-    const { id } = params;
-    return ( 
-        <CatalogDetails id={id} />
-     );
+export default function DetailCatalogPage() {
+
+    const pathname = usePathname()
+    const id = pathname.split('/')[ pathname.split('/').length - 1]
+
+    return (
+        <div className="max-w-screen-xl mx-auto">
+            <p>Helo : {id}</p>
+        </div>
+    );
 }
