@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Card({ id, imageUrl, name, price }: CardType) {
     return (
-        <Link href={`catalog/${id}`}>
+        <Link href={`/catalog/${id}`}>
             <div className="bg-gray-100 h-60 rounded-md overflow-hidden">
                 <Image src={imageUrl} alt="image" width={200} height={200} className="block m-auto" />
             </div>
