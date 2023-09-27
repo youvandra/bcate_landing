@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className='max-w-sm md:max-w-screen-xl mx-auto p-4 md:p-0'>
-            <div className={`w-full py-8 h-auto grid grid-cols-12 gap-8`} >
-                <div className='col-span-12 md:col-span-6 mt-0 md:mt-10 flex flex-col space-y-6 ' >
+        <div className='mx-auto p-4 md:p-0'>
+            <div className={`w-full h-auto grid grid-cols-12 gap-8 lg:bg-hero-bg lg:bg-cover lg:bg-bottom lg:px-4 lg:py-16 xl:py-24 xl:px-52`} >
+                <div className='col-span-12 md:col-span-6 mt-0 md:mt-10 flex flex-col space-y-6' >
                     <h1 className='text-4xl md:text-6xl font-semibold'>BCate Project</h1>
                     <p className='max-w-lg text-lg'>Welcome to Bcate 👋, where creativity meets blockchain, your gateway to a world of unique architectural designs!</p>
 
@@ -40,11 +40,11 @@ export default function Home() {
                     </div>
 
                 </div>
-                <div className='col-span-12 md:col-span-6' >
-                    <img src="https://www.coasterfurniture.com/wp-content/uploads/living-room-with-black-furniture.jpeg" alt="" className="object-cove rounded-md" />
+                <div className='col-span-12 md:col-span-6'>
+                    <Image src="/hero.svg" alt="" width={1000} height={1000} className="object-cove rounded-md lg:hidden" />
                 </div>
             </div>
-            <div className="my-12" >
+            <div className="my-12 lg:px-4 xl:px-52" >
                 <p className="text-3xl font-semibold mb-12" >Why use Bcate?</p>
                 <div className="grid grid-cols-12 gap-4" >
                     <div className="col-span-6 md:col-span-3 flex flex-col space-y-2" >
@@ -77,7 +77,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="my-12" >
+            <div className="my-12 md:px-4 xl:px-52" >
                 <p className="text-3xl font-semibold mb-2" >Lets explore</p>
                 <p className="mb-12" >We provide all kinds of furniture design and building architecture</p>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
