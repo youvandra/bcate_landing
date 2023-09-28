@@ -42,10 +42,22 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <Image src="/hero.svg" alt="" width={1000} height={1000} className="object-cove rounded-md lg:hidden" />
+                    <Image src="/hero.svg" alt="" width={1000} height={1000} className="object-cover rounded-md lg:hidden" />
                 </div>
             </div>
-            <div className="my-12 md:px-4 max-w-screen-xl mx-auto" >
+            <div className="my-12 md:px-4 max-w-screen-xl mx-auto grid grid-cols-12 gap-8" >
+                <div className="col-span-12 md:col-span-6 flex flex-col justify-center" >
+                    <h1 className="mb-6 text-3xl font-semibold" >NFT Certifcate for Blue Print Design</h1>
+                    <p className='max-w-lg text-lg' >
+                        BCate uses blockchain technology and NFT to create the certificate of authenticity for blue print design.
+                        Every certificates has been tokenized to prove the legitimacy of the design.
+                    </p>
+                </div>
+                <div className="col-span-12 md:col-span-6 hidden md:flex flex-col justify-center " >
+                    <img src="/blueprint.png" className="h-96 object-contain rounded-md" alt="" />
+                </div>
+            </div>
+            {/* <div className="my-12 md:px-4 max-w-screen-xl mx-auto" >
                 <p className="text-3xl font-semibold mb-12" >Why use Bcate?</p>
                 <div className="grid grid-cols-12 gap-4" >
                     <div className="col-span-6 md:col-span-3 flex flex-col space-y-2" >
@@ -77,7 +89,7 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="my-12 md:px-4 max-w-screen-xl mx-auto" >
                 <p className="text-3xl font-semibold mb-2" >Lets explore</p>
                 <p className="mb-12" >We provide all kinds of furniture design and building architecture</p>
