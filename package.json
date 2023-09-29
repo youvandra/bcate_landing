@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.1.0",
+    "@mantine/hooks": "^7.1.0",
+    "@mantine/notifications": "^7.1.0",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -17,6 +20,7 @@
     "boxicons": "^2.1.4",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "metamask-react": "^2.7.0",
     "next": "13.4.19",
     "postcss": "8.4.30",
     "react": "18.2.0",
