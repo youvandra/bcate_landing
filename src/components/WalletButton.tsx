@@ -16,17 +16,13 @@ export const WalletButton = () => {
 
     console.log('hello')
 
-    if (status === 'initializing' || status === 'notConnected') {
-      try {
-        await connect();
-      } catch (error) {
-        showNotification({
-          message: "Failed to connect with MetaMask",
-          color: "red",
-        });
-      }
-    } else {
-      return;
+    try {
+      await connect();
+    } catch (error) {
+      showNotification({
+        message: "Failed to connect with MetaMask",
+        color: "red",
+      });
     }
 
 

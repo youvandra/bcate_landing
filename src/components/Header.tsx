@@ -43,7 +43,7 @@ const Header = () => {
             <Link href="/about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 0 ">About</Link>
           </li>
           <li>
-            <Link href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 0 ">
+            <Link href="/sell" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 0 ">
               <span>
                 Start Selling
                 <i className='bx bx-link-alt'></i>
@@ -51,7 +51,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            {/* <WalletButton /> */}
+            <div className="inline-block md:hidden" >
+              <WalletButton />
+            </div>
           </li>
         </ul>
       </div>

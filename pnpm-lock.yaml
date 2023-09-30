@@ -12,11 +12,14 @@ specifiers:
   boxicons: ^2.1.4
   eslint: 8.49.0
   eslint-config-next: 13.4.19
+  flowbite: ^1.8.1
+  flowbite-react: ^0.6.3
   metamask-react: ^2.7.0
   next: 13.4.19
   postcss: 8.4.30
   react: 18.2.0
   react-dom: 18.2.0
+  react-hook-form: ^7.46.2
   react-icons: ^4.11.0
   tailwindcss: 3.3.3
   typescript: 5.2.2
@@ -34,11 +37,14 @@ dependencies:
   boxicons: 2.1.4
   eslint: 8.49.0
   eslint-config-next: 13.4.19_eslint@8.49.0+typescript@5.2.2
+  flowbite: 1.8.1
+  flowbite-react: 0.6.3_54783157dd899599d86dc8b056691f4f
   metamask-react: 2.7.0
   next: 13.4.19_react-dom@18.2.0+react@18.2.0
   postcss: 8.4.30
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-hook-form: 7.46.2_react@18.2.0
   react-icons: 4.11.0_react@18.2.0
   tailwindcss: 3.3.3
   typescript: 5.2.2
@@ -344,6 +350,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: false
+
+  /@popperjs/core/2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
   /@rushstack/eslint-patch/1.5.0:
@@ -740,6 +750,10 @@ packages:
       fsevents: 2.3.3
     dev: false
 
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
+
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
     dev: false
@@ -790,6 +804,10 @@ packages:
 
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
+    dev: false
+
+  /debounce/1.2.1:
+    resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
     dev: false
 
   /debug/3.2.7:
@@ -900,6 +918,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.1
       csstype: 3.1.2
+    dev: false
+
+  /easy-bem/1.1.1:
+    resolution: {integrity: sha512-GJRqdiy2h+EXy6a8E6R+ubmqUM08BK0FWNq41k24fup6045biQ8NXxoXimiwegMQvFFV3t1emADdGNL1TlS61A==}
     dev: false
 
   /electron-to-chromium/1.4.536:
@@ -1320,6 +1342,30 @@ packages:
 
   /flatted/3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
+    dev: false
+
+  /flowbite-react/0.6.3_54783157dd899599d86dc8b056691f4f:
+    resolution: {integrity: sha512-xiRQdovcHNa3kTe00pVIULTeWt4eDU8c4iyx0ytSF2wRsNc4kai5BM0on3wEg+FEq3EmzrUmuCiD24QxU9rofw==}
+    peerDependencies:
+      react: ^18
+      react-dom: ^18
+      tailwindcss: ^3
+    dependencies:
+      '@floating-ui/react': 0.24.8_react-dom@18.2.0+react@18.2.0
+      flowbite: 1.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-icons: 4.11.0_react@18.2.0
+      react-indiana-drag-scroll: 2.2.0_react-dom@18.2.0+react@18.2.0
+      tailwind-merge: 1.14.0
+      tailwindcss: 3.3.3
+    dev: false
+
+  /flowbite/1.8.1:
+    resolution: {integrity: sha512-lXTcO8a6dRTPFpINyOLcATCN/pK1Of/jY4PryklPllAiqH64tSDUsOdQpar3TO59ZXWwugm2e92oaqwH6X90Xg==}
+    dependencies:
+      '@popperjs/core': 2.11.8
+      mini-svg-data-uri: 1.4.4
     dev: false
 
   /for-each/0.3.3:
@@ -1881,6 +1927,11 @@ packages:
       picomatch: 2.3.1
     dev: false
 
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: false
+
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
@@ -2254,12 +2305,35 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-hook-form/7.46.2_react@18.2.0:
+    resolution: {integrity: sha512-x1DWmHQchV7x2Rq9l99M/cQHC8JGchAnw9Z0uTz5KrPa0bTl/Inm1NR7ceOARfIrkNuQNAhuSuZPYa6k7QYn3Q==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-icons/4.11.0_react@18.2.0:
     resolution: {integrity: sha512-V+4khzYcE5EBk/BvcuYRq6V/osf11ODUM2J8hg2FDSswRrGvqiYUYPRy4OdrWaQOBj4NcpJfmHZLNaD+VH0TyA==}
     peerDependencies:
       react: '*'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /react-indiana-drag-scroll/2.2.0_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-+W/3B2OQV0FrbdnsoIo4dww/xpH0MUQJz6ziQb7H+oBko3OCbXuzDFYnho6v6yhGrYDNWYPuFUewb89IONEl/A==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      classnames: 2.3.2
+      debounce: 1.2.1
+      easy-bem: 1.1.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-interactive/0.8.3_react@16.14.0:
@@ -2689,6 +2763,10 @@ packages:
 
   /tabbable/6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+    dev: false
+
+  /tailwind-merge/1.14.0:
+    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: false
 
   /tailwindcss/3.3.3:
