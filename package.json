@@ -20,6 +20,7 @@
     "boxicons": "^2.1.4",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "ethers": "^6.7.1",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.6.3",
     "metamask-react": "^2.7.0",
