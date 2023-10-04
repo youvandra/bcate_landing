@@ -28,7 +28,7 @@ export default function ProductDetail() {
             <div className="flex flex-col gap-8 lg:w-2/5">
                 <h1 className="text-2xl font-medium leading-6">Kursi Mahal</h1>
                 <p className="text-2xl font-bold">Rp125.000</p>
-                <hr />
+                {/* <hr />
                 <div>
                     <p className="mb-2">Pilih Variasi</p>
                     <div className="flex gap-2">
@@ -38,7 +38,7 @@ export default function ProductDetail() {
                     <div className="bg-gray-800 text-white rounded-lg px-2 py-1 w-fit cursor-pointer hover:bg-gray-900">Coklat</div>
                     <div className="bg-gray-800 text-white rounded-lg px-2 py-1 w-fit cursor-pointer hover:bg-gray-900">Coklat</div>
                     </div>
-                </div>
+                </div> */}
                 <hr />
                 <p className="text-gray-700 text-sm leading-6 text-justify md:text-base md:leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti cum unde soluta ullam provident libero tempore reiciendis, dicta ab, totam officiis laborum natus. Cupiditate qui nemo tempora aperiam, vel sapiente cum ea aliquid dolor obcaecati? Consectetur nihil temporibus magnam, odit, hic facilis aliquid earum in reprehenderit minus aperiam voluptates?</p>
                 <h2 className="text-sm font-semibold md:text-base md:leading-8">Dimensiones : <span className="font-normal">40 x 60 x 80 cm</span></h2>

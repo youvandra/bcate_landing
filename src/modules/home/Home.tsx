@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 import { randomId } from "@/utils/generator";
 import { randomUUID } from "crypto";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -95,15 +96,27 @@ export default function Home() {
             <div className="my-12 md:px-4 max-w-screen-xl mx-auto" >
                 <p className="text-3xl font-semibold mb-2" >Lets explore</p>
                 <p className="mb-12" >We provide all kinds of furniture design and building architecture</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {/* {
                         randomId(10).map(e => (
                             <Card id={e} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
                         ))
-                    }
+                    } */}
+                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-lg font-semibold" >Furniture</h1>
+                    </div>
+                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover" >
+                        <h1 className="text-lg font-semibold" >Building</h1>
+                    </div>
+                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-lg font-semibold" >Interior</h1>
+                    </div>
+                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-lg font-semibold" >Others</h1>
+                    </div>
                 </div>
                 <div className="flex flex-row justify-center mt-8" >
-                    <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-3">Browse More</button>
+                    <Link href="/catalog" type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-3">Browse More</Link>
                 </div>
             </div>
             {/* <div className="my-12" >
