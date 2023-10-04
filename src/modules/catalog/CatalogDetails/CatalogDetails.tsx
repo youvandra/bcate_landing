@@ -1,3 +1,5 @@
+"use client";
+
 import ProductDetail from "./ProductDetail"
 import SuggestedProducts from "./SuggestedProducts"
 

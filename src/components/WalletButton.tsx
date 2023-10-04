@@ -2,6 +2,7 @@
 
 import { CHAIN_ID, CHAIN_PARAMS } from "@/utils/constant";
 import { truncate } from "@/utils/generator";
+
 import { showNotification } from "@mantine/notifications";
 import { useMetaMask } from "metamask-react";
 import { useRouter } from "next/navigation";

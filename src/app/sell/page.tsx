@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { ethers, parseEther } from 'ethers';
 import ABI from '../../utils/ABI.json';

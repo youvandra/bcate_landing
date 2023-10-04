@@ -1,6 +1,7 @@
+"use client";
+
 import Select, { IOption } from "@/components/Select"
 import Color from "./Color";
-import Range from "./Range";
 import Ratings from "./Ratings";
 
 const tableCategories: IOption[] = [

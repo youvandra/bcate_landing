@@ -1,3 +1,5 @@
+"use client";
+
 import { AiOutlineStar } from "react-icons/ai";
 
 const generateStarsArray = (number: number) => {
