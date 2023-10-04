@@ -102,17 +102,17 @@ export default function Home() {
                             <Card id={e} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
                         ))
                     } */}
-                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-lg font-semibold" >Furniture</h1>
+                    <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-xl font-semibold text-white" >Furniture</h1>
                     </div>
-                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover" >
-                        <h1 className="text-lg font-semibold" >Building</h1>
+                    <div className="col-span-2 bg-building p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-xl font-semibold text-white" >Building</h1>
                     </div>
-                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-lg font-semibold" >Interior</h1>
+                    <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-xl font-semibold text-white" >Interior</h1>
                     </div>
-                    <div className="col-span-2 bg-hero-bg p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-lg font-semibold" >Others</h1>
+                    <div className="col-span-2 bg-building p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                        <h1 className="text-xl font-semibold text-white" >Others</h1>
                     </div>
                 </div>
                 <div className="flex flex-row justify-center mt-8" >
