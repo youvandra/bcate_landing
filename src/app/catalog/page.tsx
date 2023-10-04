@@ -1,5 +1,3 @@
-"use client";
-
 import Card from "@/components/Card";
 import CatalogSidebar from "@/modules/catalog/sidebar/CatalogSidebar";
 import { randomId } from "@/utils/generator";
