@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/Card";
 import { randomId } from "@/utils/generator";
 import { randomUUID } from "crypto";
