@@ -40,7 +40,7 @@ const SellPage = () => {
             await tx.wait();
             alert('Success create NFT');
         } catch (error) {
-            alert(`Gagal membuat NFT: ${error}`, );
+            alert(`Gagal membuat NFT: ${error}`,);
 
         }
     }
