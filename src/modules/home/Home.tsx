@@ -102,18 +102,26 @@ export default function Home() {
                             <Card id={e} imageUrl="/kursi.png" name="Kursi Mahal" price={100} />
                         ))
                     } */}
-                    <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-xl font-semibold text-white" >Furniture</h1>
-                    </div>
-                    <div className="col-span-2 bg-building p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-xl font-semibold text-white" >Building</h1>
-                    </div>
-                    <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-xl font-semibold text-white" >Interior</h1>
-                    </div>
-                    <div className="col-span-2 bg-building p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
-                        <h1 className="text-xl font-semibold text-white" >Others</h1>
-                    </div>
+                    <Link href="/catalog">
+                        <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                            <h1 className="text-xl font-semibold text-white" >Furniture</h1>
+                        </div>
+                    </Link>
+                    <Link href="/catalog">
+                        <div className="col-span-2 bg-building p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                            <h1 className="text-xl font-semibold text-white" >Building</h1>
+                        </div>
+                    </Link>
+                    <Link href="/catalog" >
+                        <div className="col-span-2 bg-furniture p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                            <h1 className="text-xl font-semibold text-white" >Interior</h1>
+                        </div>
+                    </Link>
+                    <Link href="/catalog">
+                        <div className="col-span-2 bg-others p-8 h-48 object-cover flex flex-col justify-end rounded-md" >
+                            <h1 className="text-xl font-semibold text-white" >Others</h1>
+                        </div>
+                    </Link>
                 </div>
                 <div className="flex flex-row justify-center mt-8" >
                     <Link href="/catalog" type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-3">Browse More</Link>

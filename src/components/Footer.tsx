@@ -15,10 +15,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">Bcate</a>
+                  <a href="https://flowbite.com/" className="hover:underline">About Bcate</a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
+                  <a href="https://tailwindcss.com/" className="hover:underline">Customer Service</a>
                 </li>
               </ul>
             </div>
