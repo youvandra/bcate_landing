@@ -1,12 +1,13 @@
 export type paramsType = {
-    params: {
-        id: string;
-    }
+	params: {
+		id: string;
+	};
 };
 
 export type CardType = {
-    id: string,
-    imageUrl: string;
-    name: string;
-    price: number;
+	id: string | number;
+	imageUrl: string;
+	name: string;
+	price: number;
+	desc: string;
 };

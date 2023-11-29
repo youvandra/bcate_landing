@@ -1,32 +1,37 @@
 'use client';
 
 import Card from '@/components/Card';
-import { randomId } from '@/utils/generator';
-import useWrite from '@/utils/useWrite';
-import { useMetaMask } from 'metamask-react';
-import { UseContractWriteConfig, usePrepareContractWrite } from 'wagmi';
 
 import abi from '@/utils/ABI.json';
+import { useEffect, useState } from 'react';
+import { useAuth } from '@/utils/useContextCustom';
+import { ethers } from 'ethers';
 
 export default function CatalogPage() {
-	const { account } = useMetaMask();
+	const { ethersProvider } = useAuth();
+	const [data, setData] = useState<any>([]);
 
-	const { config } = usePrepareContractWrite({
-		address: '0xD365EA07e1b903358FE352AE5C80A4055d5A80C2' as `0x${string}`,
-		abi: abi,
-		functionName: 'mintTicket',
-		// args: [
-		// 	address, // address wallet
-		// 	param?.id, // id
-		// ],
-	}) as unknown as {
-		config: UseContractWriteConfig;
+	const getAllBlueprints = async () => {
+		try {
+			const signer = await ethersProvider.getSigner();
+			const contracts = new ethers.Contract(
+				'0x5ddC6516B16B1fd700F98142c3F52B7C5163F5db',
+				abi,
+				signer
+			);
+
+			const transaction = await contracts.getAllBlueprints();
+			console.log(transaction, 'trasnsaction');
+			setData(transaction);
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
-	const {
-		data: { isLoading, error, isSuccess },
-		write,
-	} = useWrite(config);
+	useEffect(() => {
+		getAllBlueprints();
+	}, []);
+
 	return (
 		<div className="max-w-screen-xl mx-auto grid grid-cols-5 gap-8 p-4">
 			<div className="col-span-5">
@@ -66,19 +71,16 @@ export default function CatalogPage() {
 				</form>
 			</div>
 
-			{/* <div className="hidden lg:block lg:col-span-1" >
-                <CatalogSidebar />
-            </div> */}
-
 			<div className="col-span-5 lg:col-span-5">
 				<div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-					{randomId(10).map((num) => (
+					{data.map((data: any, idx: number) => (
 						<Card
-							key={num}
-							id={num}
-							imageUrl="/kursi.png"
-							name="Kursi Mahal"
-							price={100}
+							key={idx}
+							id={Number(data.id)}
+							imageUrl={data.BlueprintImage}
+							name={data.name}
+							price={Number(data.pricePerNFT) / 1e18}
+							desc={data.description}
 						/>
 					))}
 				</div>
