@@ -16,7 +16,7 @@ export default function Card({ id, imageUrl, name, price, desc }: CardType) {
 			<div className="p-4 flex flex-col space-y-3">
 				<div className="flex flex-row justify-between items-end">
 					<p className="text-lg">{name}</p>
-					<p className="text-gray-600 text-sm font-semibold">${price}</p>
+					<p className="text-gray-600 text-sm font-semibold">{price} BTT</p>
 				</div>
 				<p className="text-gray-600 text-sm">{desc}</p>
 				<button

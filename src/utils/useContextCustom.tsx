@@ -67,7 +67,7 @@ export const AuthProvider: React.FC<MyComponentProps> = ({ children }) => {
 				const networkId = (await web3.eth.net.getId()).toString();
 				setWalletAddress(data[0]);
 				setIsConnected(true);
-				if (networkId !== '1029') {
+				if (networkId !== '199') {
 					addBitTorrentChainToMetaMask();
 					setIsConnected(true);
 					return;
@@ -85,15 +85,16 @@ export const AuthProvider: React.FC<MyComponentProps> = ({ children }) => {
 					method: 'wallet_addEthereumChain',
 					params: [
 						{
-							chainId: '0x405',
-							chainName: 'BitTorrent Chain Donau',
+							chainId: '0xc7',
+							chainName: 'BitTorrent Chain Mainnet',
 							nativeCurrency: {
 								name: 'BTT',
 								symbol: 'BTT',
 								decimals: 18,
 							},
-							rpcUrls: ['https://pre-rpc.bt.io/'],
+							rpcUrls: ['https://rpc.bt.io/'],
 							// blockExplorerUrls: ['https://explorer.btt.chain.com'],
+							
 						},
 					],
 				});

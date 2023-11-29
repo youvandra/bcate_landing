@@ -16,7 +16,7 @@ export default function DetailCatalogPage() {
 		try {
 			const signer = await ethersProvider.getSigner();
 			const contracts = new ethers.Contract(
-				'0x5ddC6516B16B1fd700F98142c3F52B7C5163F5db',
+				'0xd7c38389CB89Cdaa36b64bFEb16Fa8fb190c32B9',
 				abi,
 				signer
 			);
@@ -35,14 +35,16 @@ export default function DetailCatalogPage() {
 		try {
 			const signer = await ethersProvider.getSigner();
 			const contracts = new ethers.Contract(
-				'0x5ddC6516B16B1fd700F98142c3F52B7C5163F5db',
+				'0xd7c38389CB89Cdaa36b64bFEb16Fa8fb190c32B9',
 				abi,
 				signer
 			);
 
 			const transaction = await contracts.mintBlueprint(BigInt(data.id), {
 				gasLimit: 25000,
+				value: data.pricePerNFT // Convert ether to wei
 			});
+			
 
 			await transaction.wait();
 		} catch (error) {
@@ -62,6 +64,7 @@ export default function DetailCatalogPage() {
 		);
 	}
 
+
 	return (
 		<div>
 			<div className="flex flex-col items-center justify-center p-8">
@@ -71,6 +74,7 @@ export default function DetailCatalogPage() {
 					className="h-96 object-cover mb-8"
 				/>
 				<p className="text-2xl font-semibold mb-8">{data.name}</p>
+				<p className="text-2xl font-semibold mb-8">{ethers.utils.formatEther(data.pricePerNFT)}</p>
 			</div>
 
 			<div className="w-full bg-gray-950 text-white">

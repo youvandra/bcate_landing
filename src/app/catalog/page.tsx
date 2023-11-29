@@ -15,7 +15,9 @@ export default function CatalogPage() {
 		try {
 			const signer = await ethersProvider.getSigner();
 			const contracts = new ethers.Contract(
-				'0x5ddC6516B16B1fd700F98142c3F52B7C5163F5db',
+				'0xd7c38389CB89Cdaa36b64bFEb16Fa8fb190c32B9',
+
+				
 				abi,
 				signer
 			);
