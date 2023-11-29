@@ -1,7 +1,8 @@
 "use client";
 
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { ethers, parseEther } from 'ethers';
+import { ethers } from 'ethers';
+import { parseEther } from 'ethers/lib/utils';
 import ABI from '../../utils/ABI.json';
 
 declare global {
